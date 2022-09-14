@@ -6,19 +6,223 @@
   font-size: 16px;
 }
 
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #000;
+  text-decoration: none;
+}
+
+.sprite{
+  background-image: url(./images/assets.png);
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
 #wrap{
   width: 100%;
-
+  height: 100vh;
 }
 
 #loginPage{
   width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginBanner{
-
+  width: 30%;
 }
 
 .loginBanner > h1{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.loginBanner > p{
+  font-size: 0.8rem;
+  line-height: 1rem;
+  color: #7c7c7c;
+  margin-bottom: 10px;
+}
+.loginBanner > p:last-of-type{
+  font-size: 0.7rem;
+  color: #000;
+}
+
+.loginBanner > p .icoTip{
+  width: 30px;
+  height: 16px;
+  background-position: -20px -200px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.loginBanner > img{
+  width: 100%;
+}
+
+.loginForm{
+  width: 30%;
+  max-width: 480px;
+  border: #DDD 1px solid;
+  padding: 60px 70px;
+}
+
+.loginForm .kakao{
+  width: 88px;
+  height: 27px;
+}
+
+.loginForm > form{
+  width: 100%;
+  margin: 50px 0;
+}
+
+.loginForm form .inputBox{
+  width: 100%;
+  height: 50px;
+  min-width: 260px;
+  border: 0;
+  border-bottom: 2px solid #EEE;
+  line-height: 1.5rem;
+}
+
+.loginForm form input:focus{
+  border: 0;
+  border-bottom: 2px solid #333;
+  outline: none;
+}
+
+.loginForm form .keepLoginWrap{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.loginForm form #login{
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+  border: 0;
+  outline: 0;
+  background-color: #fee500;
+  font-weight: 500;
+}
+
+.loginForm form .or{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.loginForm form .or .orLine::before, .orLine::after{
+  display: inline-block;
+  width: calc(50% - 25px);
+  height: 1px;
+  background-color: #CCC;
+  content: '';
+}
+
+.loginForm form .or .orText{
+  display: inline-block;
+  width: 40px;
+  font-size: 0.6rem;
+  line-height: 1rem;
+  text-align: center;
+  position: relative;
+  top: 3px;
+}
+
+.loginForm form #qrLogin{
+  width: 100%;
+  height: 60px;
+  margin: 20px 0;
+  border: 0;
+  outline: 0;
+  background-color: #DDD;
+  font-weight: 500;
+}
+
+.loginForm form #qrLogin .icoQr{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-position: -80px -200px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.loginForm > .loginMenu{
+  width: 100%;
+  position: relative;
+}
+
+.loginForm > .loginMenu a{
+  font-size: 0.8rem;
+}
+
+.loginForm > .loginMenu > .help{
+  position: absolute;
+  right: 0;
+}
+
+.loginForm > .loginMenu > .help > a:first-child::after{
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #ccc;
+  position: relative;
+  top: 2px;
+  margin-left: 6px;
+}
+
+
+#footer{
+  width: 100%;
+  height: 15%;
+  border-top: #ddd 1px solid;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#footer > .footerMenu{
+  text-align: center;
+}
+
+#footer > .footerMenu > li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+#footer > .footerMenu > li > a, select{
+  font-size: 0.8rem;
+}
+
+#footer > .footerMenu > li:nth-of-type(2) > a{
+  font-weight: bold;
+}
+
+#footer > .footerMenu > li > select{
+  border: 0;
+  outline: 0;
+}
+
+#footer > span{
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 20px;
+  font-weight: 500;
 }

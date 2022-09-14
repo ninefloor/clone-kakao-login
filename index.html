@@ -19,9 +19,56 @@
           이제부터 Daum은 카카오계정으로 이용할 수 있습니다. <br>
           사용 중인 카카오계정(전화번호 또는 이메일)으로 로그인해 보세요.
         </p>
+        <p>
+          <span class="sprite icoTip"></span> 더보기 > 설정 > 개인/보안
+        </p>
+        <img src="./images/login_banner.png" alt="로그인 배너 이미지">
       </div>
-      <div class="loginForm"></div>
+      <div class="loginForm">
+        <span class="sprite kakao"></span>
+        <form>
+          <input type="text" name="id" id="id" class="inputBox" placeholder="카카오메일 아이디, 이메일, 전화번호">
+          <input type="password" name="pw" class="inputBox" id="password" placeholder="비밀번호">
+          <div class="keepLoginWrap">
+            <input type="checkbox" name="keepLogin" id="keepLogin">
+            <label for="keepLogin">로그인 상태 유지</label>
+          </div>
+          <button id="login">로그인</button>
+          <div class="or">
+            <span class="orLine">
+              <span class="orText">또는</span>
+            </span>
+          </div>
+          <button id="qrLogin">
+            <span class="sprite icoQr"></span>QR코드 로그인
+          </button>
+        </form>
+        <div class="loginMenu">
+          <a href="#">회원가입</a>
+          <span class="help">
+            <a href="#">카카오계정</a>
+            <a href="#">비밀번호 찾기</a>
+          </span>
+        </div>
+      </div>
     </div>
+    <footer id="footer">
+      <ul class="footerMenu">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">운영정책</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li>
+          <select name="lang" id="selectLang">
+            <option value="ko">한국어</option>
+            <option value="en">English</option>
+            <option value="jp">日本語</option>
+          </select>
+      </li>
+      </ul>
+      <span>Copyright © Kakao Corp. All rights reserved.</span>
+    </footer>
   </div>
   <script src="./app.js"></script>
 </body>
