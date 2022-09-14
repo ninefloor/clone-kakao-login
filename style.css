@@ -2,4 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Noto Sans KR',  'AppleSDGothicNeo-Regular', '맑은 고딕', sans-serif;
+  font-size: 16px;
+}
+
+#wrap{
+  width: 100%;
+
+}
+
+#loginPage{
+  width: 100%;
+}
+
+.loginBanner{
+
+}
+
+.loginBanner > h1{
+  font-size: 2rem;
 }
